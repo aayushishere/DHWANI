@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Quicksand:wght@300;500&family=Rajdhani:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&display=swap");
+.songpage {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 77%;
+  max-width: 900px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.container1,
+.container2 {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(76, 76, 76, 1) 10%,
+    rgba(64, 64, 64, 1) 20%,
+    rgba(5, 4, 5, 1) 55%,
+    rgba(72, 73, 74, 1) 100%
+  );
+  padding: 50px;
+  color: #ffffff;
+  margin: 10px 0;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.container1 img {
+  width: 25%;
+  min-width: 250px;
+  border-radius: 10px;
+}
+
+.container1 .info {
+  flex-grow: 1;
+  padding: 30px;
+  height: 300px;
+  margin: 20px;
+  background: rgba(14, 14, 14, 0.692);
+  position: relative;
+  display: flex;
+  border-radius: 20px;
+  border: 2px solid black;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container1 .info .block {
+  display: flex;
+}
+
+.container1 .info .block .item1 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: "Rajdhani", sans-serif;
+  width: 80px;
+  text-align: left;
+  margin: 0 10px;
+}
+
+.container1 .info .block .item2 {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.container1 .info .head .item1,
+.container1 .info .head .item2 {
+  font-size: 40px;
+}
+
+.container1 .info button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  bottom: 0;
+  display: block;
+  padding: 12px 24px 12px 24px;
+  border-radius: 30px;
+  border-width: 0px;
+  color: #ffffff;
+  background-color: blueviolet;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+}
+
+.container2 .lyrics,
+.reviewsTab {
+  flex-grow: 1;
+  height: 650px;
+  background: rgba(0, 0, 0, 0.295);
+  border-radius: 20px;
+  margin: 10px;
+  width: 50%;
+}
+
+.container2 .lyrics h2,
+.reviewsTab h2 {
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+  /* background: red; */
+  padding: 10px;
+}
+
+.container2 .lyrics div p {
+  padding: 20px;
+  overflow-y: scroll;
+  height: 450px;
+  font-family: "Quicksand", sans-serif;
+}
+.container2 .reviewsTab .reviewscroll {
+  /* background: red; */
+  padding: 10px;
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.container2 .reviewsTab .rateTab {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.container2 .reviewsTab .rateTab button {
+  padding: 5px;
+  font-size: 1.15em;
+}
+
+.container2 .reviewsTab .rateTab textarea {
+  padding: 5px;
+}
+
+@media screen and (max-width: 995px) {
+  .container1 {
+    flex-direction: column;
+  }
+
+  .container2 {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .container2 .lyrics,
+  .reviewsTab {
+    width: 100%;
+  }
+}

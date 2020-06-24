@@ -1,0 +1,134 @@
+.search {
+  background: rgba(0, 0, 0, 0.775);
+  width: 90%;
+  height: 50px;
+  max-width: 677px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  border-radius: 70px;
+  position: relative;
+  margin: 50px;
+}
+
+.search .searchBox {
+  background: white;
+  border-radius: 50px;
+  padding-left: 10px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+}
+
+.search .searchBox input {
+  border: none;
+  font-size: 1.25em;
+  font-family: "Roboto Condensed", sans-serif;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  width: 70%;
+}
+
+.search .searchBox input:focus {
+  outline: none;
+}
+
+.search .searchBox .optionBox {
+  position: absolute;
+  right: 0;
+  width: 22.5%;
+  min-width: 100px;
+}
+
+.search .searchBox .optionBox .type {
+  background: black;
+  color: white;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.search .searchBox .optionBox .type h3 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.search .searchBox .optionBox .type svg {
+  transition: 0.3s all;
+}
+
+.search .searchBox .optionBox .type svg.active {
+  transform: rotateZ(180deg);
+}
+
+.search .searchBox .optionBox .options {
+  z-index: 3;
+  position: absolute;
+  background: white;
+  top: 50px;
+  list-style: none;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.search .searchBox .optionBox .options li:hover {
+  background: rgb(117, 117, 117);
+  color: white;
+}
+
+.search .searchBox .optionBox .options li {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.2s all;
+}
+
+.search button {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.15em;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s all;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+
+.search button:hover {
+  background: black;
+  color: white;
+}
+.search button:focus {
+  outline: none;
+}
+
+.search .searchBox .optionBox .options.active {
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+  }
+}

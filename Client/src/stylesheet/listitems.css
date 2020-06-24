@@ -1,0 +1,47 @@
+.listitems{
+	position:relative;
+	top:100px;
+	border-bottom: 1px solid #909091;
+	font-size: 10px;
+	
+}
+.headlist{
+	overflow: auto;
+	color:#909091;
+	font-family: 'Abel', sans-serif;
+}
+.headitems{
+	float: left;
+	text-transform: uppercase;
+}
+.entrylist{
+	overflow: auto;
+	color:#ffffff;
+	font-family: 'Abel', sans-serif;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.entrylist:hover
+{
+	background-color:#3f3e40;
+}
+.listentry{
+	float:left;
+}
+.le{
+	padding-left: 2px;
+	width: 34.6%;
+}
+.le2{
+	width: 31.5%;
+}
+.le3{
+	width: 13%;
+}
+.le4{
+	width: 13.3%;
+}
+.le5{
+	width: 7%;
+}
+

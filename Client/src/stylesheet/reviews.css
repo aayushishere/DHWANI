@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&display=swap");
+.reviews {
+  display: flex;
+
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+}
+.reviewpic {
+  height: 100%;
+  width: 20%;
+  padding: 5px;
+  /* background: blue; */
+  border-right: 1px solid rgb(201, 201, 201);
+}
+
+.reviewpic img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.reviews .reviewSection {
+  flex-grow: 1;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews .reviewSection .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  /* background: blue; */
+}
+
+.reviews .reviewSection .head h3 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+}
+
+.reviews .reviewSection .content {
+  width: 100%;
+}
+.reviews .reviewSection .content p {
+  height: 100%;
+}

@@ -1,0 +1,56 @@
+.loginbox {
+  padding: 50px;
+  color: #ffffff;
+  background: black;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 400px;
+  min-width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginbox .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginbox .buttons .bt {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: blueviolet;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+}
+
+.loginbox input {
+  padding: 5px 10px 5px 10px;
+  height: 35px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.loginbox label {
+  font-size: 15px;
+  margin-bottom: 3px;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px 0;
+}
+
+.loginbox h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+}

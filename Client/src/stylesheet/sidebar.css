@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.sidebar {
+  width: 20%;
+  height: 100vh;
+  top: 0;
+  min-width: 250px;
+  min-height: 400px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in;
+}
+
+.sidebar .head {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: 000084;
+  box-shadow: rgba(0, 0, 0, 0.863) 0 3 10px;
+}
+
+.sidebar .foot {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  /* background: rgba(0, 0, 0, 0.8); */
+  box-shadow: rgba(0, 0, 0, 0.863) 0 3 10px;
+}
+
+.sidebar .foot .add {
+  position: absolute;
+  width: 80%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  border-radius: 55px;
+  transform: translateX(-50%) translateY(-50%);
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.sidebar .foot span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: 0.5s all;
+}
+
+.sidebar .foot h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.5s all;
+}
+
+.sidebar .foot .add:hover span {
+  top: 50%;
+  left: 100%;
+  transform: translateX(-100%) translateY(-50%);
+}
+
+.sidebar .foot .add:hover {
+  background: rgba(34, 32, 32, 0.986);
+}
+
+.sidebar .foot .add:hover h3 {
+  top: 50%;
+  left: 10%;
+  opacity: 1;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.sidebar .content {
+  position: absolute;
+  top: 80px;
+  bottom: 80px;
+  right: 0px;
+  left: 0px;
+  overflow-y: scroll;
+}
+
+.sidebar-active {
+  transform: translateX(0);
+}
+
+.sidebar ::-webkit-scrollbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  background: rgb(0, 0, 0);
+  border-radius: 6px;
+}
+
+.sidebar ::-webkit-scrollbar-track {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(54, 54, 54, 0.411);
+  opacity: 0.5;
+  /* box-shadow: #162447 0 0 4px; */
+  border-radius: 6px;
+}
+
+.sidebar ::-webkit-scrollbar-thumb {
+  background: rgb(44, 44, 44);
+  border-radius: 6px;
+}

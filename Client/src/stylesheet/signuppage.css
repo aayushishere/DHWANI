@@ -1,0 +1,87 @@
+.signupbox {
+  padding: 50px;
+  color: #ffffff;
+  background: black;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  margin-bottom: 50px;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 500px;
+  min-width: 350px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bt1 {
+  margin: 5px 0px 10px 254px;
+}
+
+.signupbox h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 40px;
+}
+.formfield {
+  font-size: 15px;
+  margin-bottom: 3px;
+  font-family: "Quicksand", sans-serif;
+}
+.forminput {
+  padding: 5px 10px 5px 10px;
+  height: 35px;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+}
+.seltype {
+  height: 35px;
+  width: 100%;
+  font-size: 15px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+
+.seltype option {
+  height: 50px;
+}
+select:focus {
+  border: 3px solid blueviolet;
+}
+
+input:focus {
+  border: 3px solid blueviolet;
+}
+
+.loginbox .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signupbox .buttons .bt {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 20px 10px 20px;
+  border-radius: 3px;
+  border: none;
+  color: #ffffff;
+  background-color: blueviolet;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+}
+
+.signupbox .profImage {
+  width: 100%;
+  /* background: red; */
+}
+
+.signupbox .profImage .img img {
+  width: 100%;
+}
